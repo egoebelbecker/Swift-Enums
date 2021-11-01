@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		539798B027305B39003DE413 /* Swift_EnumsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539798AF27305B39003DE413 /* Swift_EnumsApp.swift */; };
+		539798B227305B39003DE413 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539798B127305B39003DE413 /* ContentView.swift */; };
+		539798B427305B3B003DE413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539798B327305B3B003DE413 /* Assets.xcassets */; };
+		539798B727305B3B003DE413 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539798B627305B3B003DE413 /* Preview Assets.xcassets */; };
+		539798C127305B3B003DE413 /* Swift_EnumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539798C027305B3B003DE413 /* Swift_EnumsTests.swift */; };
+		539798CB27305B3B003DE413 /* Swift_EnumsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539798CA27305B3B003DE413 /* Swift_EnumsUITests.swift */; };
+		539798CD27305B3B003DE413 /* Swift_EnumsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539798CC27305B3B003DE413 /* Swift_EnumsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		539798BD27305B3B003DE413 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 539798A427305B39003DE413 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 539798AB27305B39003DE413;
+			remoteInfo = "Swift Enums";
+		};
+		539798C727305B3B003DE413 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 539798A427305B39003DE413 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 539798AB27305B39003DE413;
+			remoteInfo = "Swift Enums";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		539798AC27305B39003DE413 /* Swift Enums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Enums.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		539798AF27305B39003DE413 /* Swift_EnumsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_EnumsApp.swift; sourceTree = "<group>"; };
+		539798B127305B39003DE413 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		539798B327305B3B003DE413 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		539798B627305B3B003DE413 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		539798BC27305B3B003DE413 /* Swift EnumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift EnumsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		539798C027305B3B003DE413 /* Swift_EnumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_EnumsTests.swift; sourceTree = "<group>"; };
+		539798C627305B3B003DE413 /* Swift EnumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift EnumsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		539798CA27305B3B003DE413 /* Swift_EnumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_EnumsUITests.swift; sourceTree = "<group>"; };
+		539798CC27305B3B003DE413 /* Swift_EnumsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_EnumsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		539798A927305B39003DE413 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539798B927305B3B003DE413 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539798C327305B3B003DE413 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		539798A327305B39003DE413 = {
+			isa = PBXGroup;
+			children = (
+				539798AE27305B39003DE413 /* Swift Enums */,
+				539798BF27305B3B003DE413 /* Swift EnumsTests */,
+				539798C927305B3B003DE413 /* Swift EnumsUITests */,
+				539798AD27305B39003DE413 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		539798AD27305B39003DE413 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				539798AC27305B39003DE413 /* Swift Enums.app */,
+				539798BC27305B3B003DE413 /* Swift EnumsTests.xctest */,
+				539798C627305B3B003DE413 /* Swift EnumsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		539798AE27305B39003DE413 /* Swift Enums */ = {
+			isa = PBXGroup;
+			children = (
+				539798AF27305B39003DE413 /* Swift_EnumsApp.swift */,
+				539798B127305B39003DE413 /* ContentView.swift */,
+				539798B327305B3B003DE413 /* Assets.xcassets */,
+				539798B527305B3B003DE413 /* Preview Content */,
+			);
+			path = "Swift Enums";
+			sourceTree = "<group>";
+		};
+		539798B527305B3B003DE413 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				539798B627305B3B003DE413 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		539798BF27305B3B003DE413 /* Swift EnumsTests */ = {
+			isa = PBXGroup;
+			children = (
+				539798C027305B3B003DE413 /* Swift_EnumsTests.swift */,
+			);
+			path = "Swift EnumsTests";
+			sourceTree = "<group>";
+		};
+		539798C927305B3B003DE413 /* Swift EnumsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				539798CA27305B3B003DE413 /* Swift_EnumsUITests.swift */,
+				539798CC27305B3B003DE413 /* Swift_EnumsUITestsLaunchTests.swift */,
+			);
+			path = "Swift EnumsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		539798AB27305B39003DE413 /* Swift Enums */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 539798D027305B3B003DE413 /* Build configuration list for PBXNativeTarget "Swift Enums" */;
+			buildPhases = (
+				539798A827305B39003DE413 /* Sources */,
+				539798A927305B39003DE413 /* Frameworks */,
+				539798AA27305B39003DE413 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift Enums";
+			productName = "Swift Enums";
+			productReference = 539798AC27305B39003DE413 /* Swift Enums.app */;
+			productType = "com.apple.product-type.application";
+		};
+		539798BB27305B3B003DE413 /* Swift EnumsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 539798D327305B3B003DE413 /* Build configuration list for PBXNativeTarget "Swift EnumsTests" */;
+			buildPhases = (
+				539798B827305B3B003DE413 /* Sources */,
+				539798B927305B3B003DE413 /* Frameworks */,
+				539798BA27305B3B003DE413 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				539798BE27305B3B003DE413 /* PBXTargetDependency */,
+			);
+			name = "Swift EnumsTests";
+			productName = "Swift EnumsTests";
+			productReference = 539798BC27305B3B003DE413 /* Swift EnumsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		539798C527305B3B003DE413 /* Swift EnumsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 539798D627305B3B003DE413 /* Build configuration list for PBXNativeTarget "Swift EnumsUITests" */;
+			buildPhases = (
+				539798C227305B3B003DE413 /* Sources */,
+				539798C327305B3B003DE413 /* Frameworks */,
+				539798C427305B3B003DE413 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				539798C827305B3B003DE413 /* PBXTargetDependency */,
+			);
+			name = "Swift EnumsUITests";
+			productName = "Swift EnumsUITests";
+			productReference = 539798C627305B3B003DE413 /* Swift EnumsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		539798A427305B39003DE413 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					539798AB27305B39003DE413 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					539798BB27305B3B003DE413 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 539798AB27305B39003DE413;
+					};
+					539798C527305B3B003DE413 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 539798AB27305B39003DE413;
+					};
+				};
+			};
+			buildConfigurationList = 539798A727305B39003DE413 /* Build configuration list for PBXProject "Swift Enums" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 539798A327305B39003DE413;
+			productRefGroup = 539798AD27305B39003DE413 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				539798AB27305B39003DE413 /* Swift Enums */,
+				539798BB27305B3B003DE413 /* Swift EnumsTests */,
+				539798C527305B3B003DE413 /* Swift EnumsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		539798AA27305B39003DE413 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539798B727305B3B003DE413 /* Preview Assets.xcassets in Resources */,
+				539798B427305B3B003DE413 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539798BA27305B3B003DE413 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539798C427305B3B003DE413 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		539798A827305B39003DE413 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539798B227305B39003DE413 /* ContentView.swift in Sources */,
+				539798B027305B39003DE413 /* Swift_EnumsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539798B827305B3B003DE413 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539798C127305B3B003DE413 /* Swift_EnumsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539798C227305B3B003DE413 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539798CB27305B3B003DE413 /* Swift_EnumsUITests.swift in Sources */,
+				539798CD27305B3B003DE413 /* Swift_EnumsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		539798BE27305B3B003DE413 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 539798AB27305B39003DE413 /* Swift Enums */;
+			targetProxy = 539798BD27305B3B003DE413 /* PBXContainerItemProxy */;
+		};
+		539798C827305B3B003DE413 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 539798AB27305B39003DE413 /* Swift Enums */;
+			targetProxy = 539798C727305B3B003DE413 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		539798CE27305B3B003DE413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		539798CF27305B3B003DE413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		539798D127305B3B003DE413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swift Enums/Preview Content\"";
+				DEVELOPMENT_TEAM = 2RB84D7GS2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericgoebelbecker.Swift-Enums";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		539798D227305B3B003DE413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swift Enums/Preview Content\"";
+				DEVELOPMENT_TEAM = 2RB84D7GS2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericgoebelbecker.Swift-Enums";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		539798D427305B3B003DE413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RB84D7GS2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericgoebelbecker.Swift-EnumsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Enums.app/Swift Enums";
+			};
+			name = Debug;
+		};
+		539798D527305B3B003DE413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RB84D7GS2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericgoebelbecker.Swift-EnumsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Enums.app/Swift Enums";
+			};
+			name = Release;
+		};
+		539798D727305B3B003DE413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RB84D7GS2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericgoebelbecker.Swift-EnumsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swift Enums";
+			};
+			name = Debug;
+		};
+		539798D827305B3B003DE413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RB84D7GS2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericgoebelbecker.Swift-EnumsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swift Enums";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		539798A727305B39003DE413 /* Build configuration list for PBXProject "Swift Enums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539798CE27305B3B003DE413 /* Debug */,
+				539798CF27305B3B003DE413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		539798D027305B3B003DE413 /* Build configuration list for PBXNativeTarget "Swift Enums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539798D127305B3B003DE413 /* Debug */,
+				539798D227305B3B003DE413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		539798D327305B3B003DE413 /* Build configuration list for PBXNativeTarget "Swift EnumsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539798D427305B3B003DE413 /* Debug */,
+				539798D527305B3B003DE413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		539798D627305B3B003DE413 /* Build configuration list for PBXNativeTarget "Swift EnumsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539798D727305B3B003DE413 /* Debug */,
+				539798D827305B3B003DE413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 539798A427305B39003DE413 /* Project object */;
+}
