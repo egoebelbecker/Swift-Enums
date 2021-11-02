@@ -7,16 +7,14 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
     
     @ObservedObject var camelid: Camelid
     
     var body: some View {
         VStack {
-            if (camelid.species == "nothing!") {
-                Text("I see nothing!")
+            if (camelid.species == "") {
+                Text("")
                     .foregroundColor(.blue)
             } else if (camelid.species == "Alpaca") {
                 Text("I see an \(camelid.species)")
@@ -25,15 +23,18 @@ struct ContentView: View {
                 Text("I see a \(camelid.species)")
                     .foregroundColor(.blue)
             }
-                
+            Spacer()
+                .frame(height: 50)
             Button("Llama") {
                 self.setCamelid(species: "Llama")
             }
             Spacer()
+                .frame(height: 50)
             Button("Alpaca") {
                 self.setCamelid(species: "Alpaca")
             }
             Spacer()
+                .frame(height: 50)
             Button("Camel") {
                 self.setCamelid(species: "Camel")
             }
@@ -41,16 +42,12 @@ struct ContentView: View {
     }
     
     func setCamelid(species: String) {
-        print("Setting camelid to " + species)
         camelid.species = species
-        print("Set camelid to " + camelid.species)
     }
 
     func getCamelid() -> String {
         return camelid.species
     }
-
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

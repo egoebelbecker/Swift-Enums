@@ -9,7 +9,7 @@ import SwiftUI
 
 
 class Camelid: ObservableObject {
-    @Published var species: String = "nothing"
+    @Published var species: String = ""
 }
 
 var camelid: Camelid = Camelid()
