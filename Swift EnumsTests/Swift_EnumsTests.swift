@@ -5,8 +5,10 @@
 //  Created by Eric Goebelbecker on 11/1/21.
 //
 
+import SnapshotTesting
 import XCTest
 @testable import Swift_Enums
+import SwiftUI
 
 class Swift_EnumsTests: XCTestCase {
     
@@ -28,13 +30,57 @@ class Swift_EnumsTests: XCTestCase {
         
     }
 
-    func testExample() throws {
+    func testLlama() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         sut.setCamelid(species: "Llama")
+                
+        assertSnapshot(matching: sut, as: .dump)
+    
+        assertSnapshot(
+            matching: sut,
+            as: .image(
+                layout: .device(config: .iPhoneSe),
+                traits: .init(displayScale: 2) // ← because iPhone Se has display with 2x scale
+            )
+        )
+
+    }
+
+    func testAlpaca() throws {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        sut.setCamelid(species: "Alpaca")
         
-        XCTAssertEqual(sut.getCamelid(), "Llama")
-  
+        assertSnapshot(matching: sut, as: .dump)
+
+        assertSnapshot(
+            matching: sut,
+            as: .image(
+                layout: .device(config: .iPhoneSe),
+                traits: .init(displayScale: 2) // ← because iPhone Se has display with 2x scale
+            )
+        )
+
+        
+    }
+
+    func testCamel() throws {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        sut.setCamelid(species: "Camel")
+        
+        assertSnapshot(matching: sut, as: .dump)
+        
+        assertSnapshot(
+            matching: sut,
+            as: .image(
+                layout: .device(config: .iPhoneSe),
+                traits: .init(displayScale: 2) // ← because iPhone Se has display with 2x scale
+            )
+        )
+
+        
     }
 
 }
