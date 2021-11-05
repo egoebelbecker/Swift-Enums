@@ -17,12 +17,15 @@ struct ContentView: View {
             if (camelid.species == "") {
                 Text("")
                     .fixedSize(horizontal: true, vertical: true)
+                    .foregroundColor(.blue)
             } else if (camelid.species == "Alpaca") {
                 Text("I see an \(camelid.species)")
                     .fixedSize(horizontal: true, vertical: true)
+                    .foregroundColor(.blue)
             } else {
                 Text("I see a \(camelid.species)")
                     .fixedSize(horizontal: true, vertical: true)
+                    .foregroundColor(.blue)
             }
             Spacer()
                 .frame(height: 50)
@@ -31,6 +34,8 @@ struct ContentView: View {
                 self.setCamelid(species: "Llama")
             }
             .buttonStyle(PlainButtonStyle())
+            .foregroundColor(.blue)
+
 
             Spacer()
                 .frame(height: 50)
@@ -39,6 +44,7 @@ struct ContentView: View {
                 self.setCamelid(species: "Alpaca")
             }
             .buttonStyle(PlainButtonStyle())
+            .foregroundColor(.blue)
             Spacer()
                 .frame(height: 50)
             Button("Camel")
@@ -46,6 +52,8 @@ struct ContentView: View {
                 self.setCamelid(species: "Camel")
             }
             .buttonStyle(PlainButtonStyle())
+            .foregroundColor(.blue)
+
         }
     }
     
