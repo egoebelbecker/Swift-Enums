@@ -1,0 +1,8 @@
+▿ Optional<ContentView>
+  ▿ some: ContentView
+    ▿ _camelid: ObservedObject<Camelid>
+      - _seed: 0
+      ▿ wrappedValue: Camelid
+        ▿ _species: Published<CamelidType>
+          ▿ storage: Storage
+            - value: CamelidType.Alpaca
