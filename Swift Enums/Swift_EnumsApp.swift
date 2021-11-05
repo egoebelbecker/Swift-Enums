@@ -7,9 +7,15 @@
 
 import SwiftUI
 
+enum CamelidType: String {
+    case Unknown = ""
+    case Alpaca = "Alpaca"
+    case Camel = "Camel"
+    case Llama = "Llama"
+}
 
 class Camelid: ObservableObject {
-    @Published var species: String = ""
+    @Published var species: CamelidType = .Unknown
 }
 
 var camelid: Camelid = Camelid()

@@ -13,39 +13,40 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            if (camelid.species == "") {
-                Text("")
-                    .foregroundColor(.blue)
-            } else if (camelid.species == "Alpaca") {
-                Text("I see an \(camelid.species)")
-                    .foregroundColor(.blue)
-            } else {
-                Text("I see a \(camelid.species)")
-                    .foregroundColor(.blue)
+            switch (camelid.species) {
+                case .Unknown:
+                    Text("")
+                        .foregroundColor(.blue)
+                case .Alpaca:
+                    Text("I see an \(camelid.species.rawValue)")
+                        .foregroundColor(.blue)
+                default:
+                    Text("I see a \(camelid.species.rawValue)")
+                        .foregroundColor(.blue)
             }
             Spacer()
                 .frame(height: 50)
-            Button("Llama") {
-                self.setCamelid(species: "Llama")
+            Button(CamelidType.Llama.rawValue) {
+                self.setCamelid(species: .Llama)
             }
             Spacer()
                 .frame(height: 50)
-            Button("Alpaca") {
-                self.setCamelid(species: "Alpaca")
+            Button(CamelidType.Alpaca.rawValue) {
+                self.setCamelid(species: .Alpaca)
             }
             Spacer()
                 .frame(height: 50)
-            Button("Camel") {
-                self.setCamelid(species: "Camel")
+            Button(CamelidType.Camel.rawValue) {
+                self.setCamelid(species: .Camel)
             }
         }
     }
     
-    func setCamelid(species: String) {
+    func setCamelid(species: CamelidType) {
         camelid.species = species
     }
 
-    func getCamelid() -> String {
+    func getCamelid() -> CamelidType {
         return camelid.species
     }
 }
