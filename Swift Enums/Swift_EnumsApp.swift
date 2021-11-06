@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-enum CamelidType: String {
-    case Unknown = ""
+enum CamelidType: String, CaseIterable {
+    case Unknown = "Unknown"
     case Alpaca = "Alpaca"
     case Camel = "Camel"
     case Llama = "Llama"

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import simd
 
 struct ContentView: View {
     
@@ -24,30 +25,27 @@ struct ContentView: View {
                     Text("I see a \(camelid.species.rawValue)")
                         .foregroundColor(.blue)
             }
-            Spacer()
-                .frame(height: 50)
-            Button(CamelidType.Llama.rawValue) {
-                self.setCamelid(species: .Llama)
-            }
-            Spacer()
-                .frame(height: 50)
-            Button(CamelidType.Alpaca.rawValue) {
-                self.setCamelid(species: .Alpaca)
-            }
-            Spacer()
-                .frame(height: 50)
-            Button(CamelidType.Camel.rawValue) {
-                self.setCamelid(species: .Camel)
+
+            let values: [String] = CamelidType.allCases.map{ $0.rawValue}
+            
+            ForEach(Array(values.enumerated()), id:\.1) { (n, camelidType) in
+                
+                if (camelidType != "Unknown") {
+                    Spacer()
+                        .frame(height: 50)
+                    Button(camelidType) {
+                        self.setCamelid(species: CamelidType(rawValue: camelidType)!)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .foregroundColor(.blue)
+                }
+
             }
         }
     }
     
     func setCamelid(species: CamelidType) {
         camelid.species = species
-    }
-
-    func getCamelid() -> CamelidType {
-        return camelid.species
     }
 }
 
